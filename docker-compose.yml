@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  fall_server:
+    build:
+      context: ./fall_server
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./fall_server:/app
+    env_file:
+      - .env
+    command: uvicorn server:app --host 0.0.0.0 --port 8000 --reload
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/docs"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

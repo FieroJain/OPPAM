@@ -1,0 +1,20 @@
+# Python virtual env
+venv/
+fall_server/venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Flutter
+.dart_tool/
+build/
+
+# Firebase secrets
+fcm_service_account.json
+google-services.json
+
+# VSCode
+.vscode/
+fall_server/*.json
+android/app/google-services.json
