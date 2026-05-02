@@ -1,0 +1,42 @@
+name: fall_detection_app
+description: "Fiero AI – Fall Detection Wearable Companion App"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_bloc: ^9.1.0
+  go_router: ^15.1.2
+  google_fonts: ^6.2.1
+  percent_indicator: ^4.2.5
+  fl_chart: ^0.70.2
+  flutter_animate: ^4.5.2
+  flutter_tts: ^3.8.5
+  geolocator: ^13.0.2
+  geocoding: ^3.0.0
+  permission_handler: ^11.3.1
+  # Firebase
+  firebase_core: ^3.6.0
+  firebase_database: ^11.1.4
+  firebase_auth: ^5.3.1
+  
+  firebase_messaging: ^15.1.3
+  # Notifications
+  flutter_local_notifications: ^18.0.1
+  # HTTP client for weather API
+  http: ^1.2.0
+  # URL launcher for calls
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
